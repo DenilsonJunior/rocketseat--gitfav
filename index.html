@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>GitFav</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>{ <i class="fa-solid fa-star"></i> } GitFav</h1>
+
+            <div>
+                <label class="sr-only" for="">Digite o Github username que quer favoritar</label>
+                <input type="text" placeholder="Digite o Github username que quer favoritar">
+                <button>
+                    <i class="fa-regular fa-star"></i>
+                    <p>FAVORITAR</p>
+                </button>
+            </div>
+        </header>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Repositories</th>
+                        <th>Followers</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td class="user">
+                            <img src="https://avatars.githubusercontent.com/u/45171451?v=4" alt="">
+                            <a target="_blank" href="https://github.com/DenilsonJunior">
+                                <p>Devnilson</p>
+                                <span>devnilson</span>
+                            </a>
+                        </td>
+                        <td class="repositories">
+                            76
+                        </td>
+                        <td class="followers">
+                            958
+                        </td>
+                        <td>
+                            <button class="remove">Remover</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="user">
+                            <img src="https://avatars.githubusercontent.com/u/117331836?v=4" alt="">
+                            <a target="_blank" href="https://github.com/CarlosAlberto1991">
+                                <p>Carlos Mamão</p>
+                                <span>Carlos Mamão</span>
+                            </a>
+                        </td>
+                        <td class="repositories">
+                            36
+                        </td>
+                        <td class="followers">
+                            651
+                        </td>
+                        <td>
+                            <button class="remove">Remover</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/eece1ce244.js" crossorigin="anonymous"></script>
+</body>
+</html>
