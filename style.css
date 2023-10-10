@@ -41,7 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 11.5rem 5rem 0;
+    padding: 5rem 5rem 0;
 }
 
 header {
@@ -133,7 +133,7 @@ table td {
 
 table thead tr th {
     color: var(--colorWhite);
-    font-size: 2rem;
+    font-size: 1.8rem;
     background-color: var(--color05);
     text-align: left;
 }
@@ -162,15 +162,57 @@ table .user a {
     text-decoration: none;
 }
 
+table .user a span {
+    font-size: 1.4rem;
+}
+
 table tbody td {
     color: var(--colorWhite);
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 table tbody button {
+    cursor: pointer;
     background-color: transparent;
     border: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--color06);
     font-weight: bold;
+}
+
+@media (max-width: 960px) {
+    #app {
+        padding: 6rem 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+    }
+
+    header div {
+        /* flex-direction: column; */
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    header div input {
+        width: 100%;
+    }
+
+    header div button {
+        padding: 1.3rem;
+    }
+
+    .table {
+        margin: 0;
+        overflow: auto;
+    }
+}
+
+@media (max-width: 720px) {
+    header div button p {
+        display: none;
+    }
 }
