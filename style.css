@@ -244,6 +244,10 @@ table tbody button {
         display: none;
     }
 
+    .table {
+        height: auto;
+    }
+
     table thead th {
         padding: 1.6rem 3rem;
     }
